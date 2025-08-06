@@ -1,0 +1,103 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clyde G Selnga's Personal Homepage</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('charles.jpg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      overflow: hidden;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 3rem;
+      text-transform: uppercase;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+      margin-top: 100px;
+      letter-spacing: 5px;
+      color: #f0f0f0;
+    }
+
+    .description {
+      text-align: center;
+      font-size: 1.2rem;
+      margin: 20px;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+      color: #ddd;
+    }
+
+    .icon {
+      display: block;
+      margin: 50px auto;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background-image: url('papa.jpg');
+      background-size: cover;
+      background-position: center;
+      cursor: pointer;
+      border: 5px solid rgba(255, 255, 255, 0.6);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .icon:hover {
+      transform: scale(1.1);
+    }
+
+    .links {
+      display: none;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .links a {
+      display: block;
+      font-size: 1.5rem;
+      margin: 15px 0;
+      color: #fff;
+      text-decoration: none;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+      transition: color 0.3s ease;
+    }
+
+    .links a:hover {
+      color: #00ffb3;
+    }
+
+    .show-links {
+      display: block;
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1>Clyde G Selnga</h1>
+  <p class="description">Welcome to my personal website. I am Selnga Clyde, a PMA aspirant and a Muay thai player </p>
+
+  <div class="icon" onclick="toggleLinks()"></div>
+
+  <div id="links" class="links">
+    <a href="about.html">About Me</a>
+    <a href="blog.html">My Hobbies</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <script>
+    function toggleLinks() {
+      const links = document.getElementById("links");
+      links.classList.toggle("show-links");
+    }
+  </script>
+
+</body>
+</html>
